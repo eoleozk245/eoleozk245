@@ -28,6 +28,16 @@ Aprendo na prática, com estudo contínuo e projetos reais, para fortalecer minh
 
 <br />
 
+<p align="center">
+<img src="assets/contatos.svg" alt="Contatos" width="100%" />
+</p>
+
+<p align="center">
+<a href="https://www.instagram.com/eoleozk"><img src="https://skills.syvixor.com/api/icons?i=instagram&theme=dark" alt="Instagram @eoleozk" /></a>&nbsp;&nbsp;
+<a href="https://wa.link/qjufj8"><img src="https://skills.syvixor.com/api/icons?i=whatsapp&theme=dark" alt="Conversar pelo WhatsApp" /></a>&nbsp;&nbsp;
+<a href="mailto:leonardopessoaletec@gmail.com"><img src="https://skills.syvixor.com/api/icons?i=gmail&theme=dark" alt="Enviar e-mail para leonardopessoaletec@gmail.com" /></a>
+</p>
+
 <h3 align="center">Linguagens</h3>
 
 <p align="center">
@@ -55,14 +65,6 @@ Aprendo na prática, com estudo contínuo e projetos reais, para fortalecer minh
 <a href="https://github.com/eoleozk245/ecocity-os-core"><img src="assets/cards/ecocity.svg" alt="ecocity-os-core: site EcoCity OS criado com Lovable" width="49%" /></a>
 <img src="assets/cards/placeholder.svg" alt="Espaço reservado para o próximo projeto" width="49%" />
 
-<sub>
-sites no ar:
-<a href="https://eoleozk245.github.io/Site-SUSTENTABILIDADE-FETEC/">sustentabilidade</a> ·
-<a href="https://barbearia-daniel-lime.vercel.app">barbearia</a> ·
-<a href="https://eoleozk245.github.io/SITE-JOGOS-FETEC/">jogos</a> ·
-<a href="https://eoleozk245.github.io/FETEC-2026/">FETEC 2026</a>
-</sub>
-
 </div>
 
 <br />
@@ -86,18 +88,6 @@ sites no ar:
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/eoleozk245/eoleozk245/output/activity.svg" alt="Gráfico de contribuições por semana nos últimos 12 meses" width="100%" />
-</p>
-
-<br />
-
-<img src="assets/section-contato.svg" alt="Contato" width="100%" />
-
-<br />
-
-<p align="center">
-<a href="https://www.instagram.com/eoleozk"><img src="https://skills.syvixor.com/api/icons?i=instagram&theme=dark" alt="Instagram @eoleozk" /></a>&nbsp;&nbsp;
-<a href="https://wa.link/qjufj8"><img src="https://skills.syvixor.com/api/icons?i=whatsapp&theme=dark" alt="Conversar pelo WhatsApp" /></a>&nbsp;&nbsp;
-<a href="mailto:leonardopessoaletec@gmail.com"><img src="https://skills.syvixor.com/api/icons?i=gmail&theme=dark" alt="Enviar e-mail para leonardopessoaletec@gmail.com" /></a>
 </p>
 
 <br />

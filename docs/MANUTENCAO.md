@@ -46,7 +46,7 @@ Esses cards têm cache: depois de um commit ou contribuição nova, pode levar a
 
 ## Atualizar contatos
 
-Os contatos ficam na seção **Contato** do `README.md`, numa linha só (Instagram, WhatsApp e Gmail), com ícones no mesmo estilo de quadradinho das tecnologias. O Gmail usa um link `mailto:`, então o e-mail fica visível para quem inspecionar a página. Para acrescentar o LinkedIn, ponha mais uma linha igual a estas dentro do mesmo `<p align="center">`:
+Os contatos ficam no bloco **Contatos** do `README.md`, logo acima de Linguagens: um título animado (`assets/contatos.svg`, gerado por `build_assets.py`) e, embaixo, uma linha só com Instagram, WhatsApp e Gmail, em ícones no mesmo estilo de quadradinho das tecnologias. O Gmail usa um link `mailto:`, então o e-mail fica visível para quem inspecionar a página. Para acrescentar o LinkedIn, ponha mais uma linha igual a estas dentro do mesmo `<p align="center">`:
 
 ```html
 <a href="https://www.linkedin.com/in/SEU-USUARIO"><img src="https://skills.syvixor.com/api/icons?i=linkedin&theme=dark" alt="LinkedIn" /></a>&nbsp;&nbsp;
