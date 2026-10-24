@@ -6,7 +6,7 @@ name: Profile assets
 
 on:
   schedule:
-    - cron: "17 6 * * *"   # todo dia às 06:17 UTC (03:17 em Brasília)
+    - cron: "17 */6 * * *"  # a cada 6 horas (00:17, 06:17, 12:17, 18:17 UTC)
   workflow_dispatch:        # botão "Run workflow" na aba Actions
   push:
     branches: [main]
@@ -39,7 +39,7 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/snake-dark.svg?color_snake=#00e5ff&color_dots=#0d1b2a,#0b3a5b,#0d5fa8,#1f6feb,#2f81f7
+            dist/snake-dark.svg?color_snake=#00e5ff&color_dots=#0d1b2a,#0e4429,#006d32,#26a641,#39d353
 
       - name: Aplicar fundo escuro na cobrinha
         run: python3 scripts/generate_dashboard.py snake dist/snake-dark.svg

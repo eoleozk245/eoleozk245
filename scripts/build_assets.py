@@ -217,7 +217,6 @@ SECTIONS = [
     ("stack", "Tecnologias"),
     ("projetos", "Projetos"),
     ("dashboard", "Dashboard"),
-    ("cobrinha", "Cobrinha"),
 ]
 
 
@@ -383,24 +382,31 @@ def placeholder_card(static=False) -> str:
 # rodapé
 # ---------------------------------------------------------------------------
 def footer(static=False) -> str:
-    W, H = 1000, 130
+    """Ondas preenchidas em camadas, com degradê de ciano para azul, se movendo devagar. Sem texto."""
+    W, H = 1000, 100
     an = Anim(static)
-    o = [svg_open(W, H, "Rodapé", "Ondas animadas e a mensagem: valeu pela visita!")]
-    o.append(f'<defs><linearGradient id="wv" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{CYAN}"/>'
-             f'<stop offset="1" stop-color="{BLUE}"/></linearGradient>'
-             f'<clipPath id="fr"><rect width="{W}" height="{H}" rx="16"/></clipPath></defs>')
-    o.append(f'<rect width="{W}" height="{H}" rx="16" fill="{BG0}"/>')
+    o = [svg_open(W, H, "Rodapé", "Ondas animadas em degradê de ciano e azul")]
+    o.append(f'''<defs>
+<linearGradient id="bgf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{BG0}"/><stop offset="1" stop-color="{BG1}"/></linearGradient>
+<linearGradient id="wf" gradientUnits="userSpaceOnUse" x1="0" y1="30" x2="0" y2="{H}"><stop offset="0" stop-color="{CYAN}" stop-opacity="0.8"/><stop offset="1" stop-color="{BLUE}" stop-opacity="0.1"/></linearGradient>
+<linearGradient id="wl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{CYAN}"/><stop offset="1" stop-color="{BLUE}"/></linearGradient>
+<clipPath id="fr"><rect width="{W}" height="{H}" rx="16"/></clipPath>
+</defs>''')
+    o.append(f'<rect width="{W}" height="{H}" rx="16" fill="url(#bgf)"/>')
     o.append('<g clip-path="url(#fr)">')
-    for k, (period, amp, base, op, dur) in enumerate([(250, 9, 96, 0.55, 7), (200, 7, 104, 0.35, 9), (320, 11, 112, 0.2, 12)]):
-        pts = []
-        for x in range(0, W + period * 2 + 1, 10):
-            y = base + amp * math.sin(2 * math.pi * x / period + k)
-            pts.append(f"{x},{y:.1f}")
-        d = "M" + " L".join(pts)
-        move = an.tag(f'<animateTransform attributeName="transform" type="translate" from="0 0" to="-{period} 0" dur="{dur}s" repeatCount="indefinite"/>')
-        o.append(f'<path d="{d}" fill="none" stroke="url(#wv)" stroke-width="2" opacity="{op}">{move}</path>')
+    # (período, amplitude, linha-base, opacidade, duração, fase): do fundo para a frente
+    layers = [(330, 9, 42, 0.30, 14, 0.0), (250, 8, 54, 0.45, 10, 1.7), (190, 7, 66, 0.70, 7, 3.1)]
+    for i, (period, amp, base, op, dur, phase) in enumerate(layers):
+        xs = list(range(0, W + period * 2 + 1, 8))
+        top = [f"{x},{base + amp * math.sin(2 * math.pi * x / period + phase):.1f}" for x in xs]
+        d_fill = "M" + " L".join(top) + f" L{xs[-1]},{H} L0,{H} Z"
+        move = an.tag(f'<animateTransform attributeName="transform" type="translate" from="0 0" to="-{period} 0" '
+                      f'dur="{dur}s" repeatCount="indefinite"/>')
+        o.append(f'<path d="{d_fill}" fill="url(#wf)" opacity="{op}">{move}</path>')
+        if i == len(layers) - 1:                   # linha de crista só na onda da frente
+            d_line = "M" + " L".join(top)
+            o.append(f'<path d="{d_line}" fill="none" stroke="url(#wl)" stroke-width="1.6" opacity="0.9">{move}</path>')
     o.append("</g>")
-    o.append(f'<text class="m" x="500" y="50" font-size="17" fill="#7ee7d9" text-anchor="middle">valeu pela visita!</text>')
     o.append(f'<rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="16" fill="none" stroke="{BORDER}"/>')
     o.append("</svg>")
     return "".join(o)

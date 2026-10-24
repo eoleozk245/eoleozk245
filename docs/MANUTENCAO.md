@@ -7,7 +7,7 @@ Guia rápido de como cada parte do perfil funciona e como mexer nela.
 | Arquivo / pasta | O que é |
 | --- | --- |
 | `README.md` | A página do perfil. Edite à mão. |
-| `assets/` | SVGs estáticos (banner, cabeçalhos de seção, cards, rodapé). **Gerados** por `scripts/build_assets.py`. Para mudar o nome de uma seção, edite a lista `SECTIONS` nesse script. |
+| `assets/` | SVGs estáticos (banner, cabeçalhos de seção, cards, rodapé com ondas animadas). **Gerados** por `scripts/build_assets.py`. Para mudar o nome de uma seção, edite a lista `SECTIONS` nesse script. |
 | `scripts/theme.py` | Cores e fontes. Mudar aqui muda o visual de todos os SVGs. |
 | `scripts/build_assets.py` | Gera os SVGs de `assets/`. Rodar na sua máquina quando quiser mudar algo. |
 | `scripts/generate_dashboard.py` | Roda no GitHub Actions. Gera `overview.svg` e `activity.svg` com dados reais da API e põe fundo escuro na cobrinha. |
@@ -16,7 +16,7 @@ Guia rápido de como cada parte do perfil funciona e como mexer nela.
 
 ## O workflow
 
-- **Quando roda:** todo dia (06:17 UTC), a cada push em `main` que mexa no workflow ou nos scripts, e manualmente.
+- **Quando roda:** a cada 6 horas (00:17, 06:17, 12:17, 18:17 UTC), a cada push em `main` que mexa no workflow ou nos scripts, e manualmente.
 - **Rodar na mão:** aba **Actions** → **Profile assets** → **Run workflow**.
 - **Permissões:** só `contents: write` (para atualizar o branch `output`). Nenhum segredo é usado: o `GITHUB_TOKEN` é fornecido pelo próprio GitHub.
 - **Se falhar:** os arquivos antigos do branch `output` continuam no ar. Abra a execução com ❌ na aba Actions e leia o log do passo que falhou.

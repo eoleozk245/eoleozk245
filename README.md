@@ -92,16 +92,12 @@ Aprendo na prática, com estudo contínuo e projetos reais, para fortalecer minh
 
 <br />
 
-<img src="assets/section-cobrinha.svg" alt="Cobrinha das contribuições" width="100%" />
-
-<br />
-
 <div align="center">
 
 <img src="https://raw.githubusercontent.com/eoleozk245/eoleozk245/output/snake-dark.svg" alt="Cobrinha percorrendo meu gráfico de contribuições do GitHub" width="100%" />
 
 <br />
 
-<img src="assets/footer.svg" alt="valeu pela visita!" width="100%" />
+<img src="assets/footer.svg" alt="Rodapé" width="100%" />
 
 </div>
