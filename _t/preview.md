@@ -1,17 +1,45 @@
-### I1 shields icon-only
+## Modelo novo
+
+<h3 align="center">Linguagens</h3>
 
 <p align="center">
-<a href="https://www.instagram.com/eoleozk"><img src="https://img.shields.io/badge/-%20-12304f?style=for-the-badge&logo=instagram&logoColor=00e5ff&labelColor=12304f" alt="Instagram" /></a>
-<a href="https://wa.link/qjufj8"><img src="https://img.shields.io/badge/-%20-12304f?style=for-the-badge&logo=whatsapp&logoColor=00e5ff&labelColor=12304f" alt="WhatsApp" /></a>
+<img src="https://skillicons.dev/icons?i=html,css,js&theme=dark" alt="HTML, CSS e JavaScript" />
 </p>
 
-### I2 simple-icons cyan 36px
+<h3 align="center">Ferramentas</h3>
 
 <p align="center">
-<a href="https://www.instagram.com/eoleozk"><img src="https://cdn.simpleicons.org/instagram/00e5ff" alt="Instagram" width="36" height="36" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://wa.link/qjufj8"><img src="https://cdn.simpleicons.org/whatsapp/00e5ff" alt="WhatsApp" width="36" height="36" /></a>
+<img src="https://skillicons.dev/icons?i=supabase,vscode,git,github&theme=dark" alt="Supabase, VS Code, Git e GitHub" />
 </p>
 
-### I3 skillicons (instagram) + linkedin + gmail so p/ referencia de estilo
+## Contato X: instagram skillicons + whatsapp syvixor (provedores misturados)
 
-<p align="center"><img src="https://skillicons.dev/icons?i=instagram,linkedin,gmail&theme=dark" /></p>
+<h3 align="center">Redes sociais</h3>
+
+<p align="center">
+<a href="https://www.instagram.com/eoleozk"><img src="https://skillicons.dev/icons?i=instagram&theme=dark" alt="Instagram" /></a>
+</p>
+
+<h3 align="center">Mensagens</h3>
+
+<p align="center">
+<a href="https://wa.link/qjufj8"><img src="https://skills.syvixor.com/api/icons?i=whatsapp&theme=dark" alt="WhatsApp" /></a>
+</p>
+
+## Contato Y: tudo syvixor
+
+<h3 align="center">Redes sociais</h3>
+
+<p align="center">
+<a href="https://www.instagram.com/eoleozk"><img src="https://skills.syvixor.com/api/icons?i=instagram&theme=dark" alt="Instagram" /></a>
+</p>
+
+<h3 align="center">Mensagens</h3>
+
+<p align="center">
+<a href="https://wa.link/qjufj8"><img src="https://skills.syvixor.com/api/icons?i=whatsapp&theme=dark" alt="WhatsApp" /></a>
+</p>
+
+## Lado a lado (mesma linha)
+
+<p align="center"><img src="https://skillicons.dev/icons?i=instagram&theme=dark" /> <img src="https://skills.syvixor.com/api/icons?i=instagram&theme=dark" /> <img src="https://skills.syvixor.com/api/icons?i=whatsapp&theme=dark" /> <img src="https://skillicons.dev/icons?i=github&theme=dark" /></p>
