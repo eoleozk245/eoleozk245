@@ -7,7 +7,7 @@ Guia rápido de como cada parte do perfil funciona e como mexer nela.
 | Arquivo / pasta | O que é |
 | --- | --- |
 | `README.md` | A página do perfil. Edite à mão. |
-| `assets/` | SVGs estáticos (banner, cabeçalhos, cards, rodapé). **Gerados** por `scripts/build_assets.py`. |
+| `assets/` | SVGs estáticos (banner, cabeçalhos de seção, cards, rodapé). **Gerados** por `scripts/build_assets.py`. Para mudar o nome de uma seção, edite a lista `SECTIONS` nesse script. |
 | `scripts/theme.py` | Cores e fontes. Mudar aqui muda o visual de todos os SVGs. |
 | `scripts/build_assets.py` | Gera os SVGs de `assets/`. Rodar na sua máquina quando quiser mudar algo. |
 | `scripts/generate_dashboard.py` | Roda no GitHub Actions. Gera `overview.svg` e `activity.svg` com dados reais da API e põe fundo escuro na cobrinha. |
@@ -28,8 +28,9 @@ Guia rápido de como cada parte do perfil funciona e como mexer nela.
 | --- | --- | --- |
 | [github-readme-stats](https://github.com/anuraghazra/github-readme-stats) (`github-readme-stats.vercel.app`) | Card de estatísticas e card de linguagens | Os dois cards ficam quebrados. Dá para hospedar a própria instância no Vercel. |
 | [streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats) (`streak-stats.demolab.com`) | Card de sequência | Só esse card quebra. |
-| [Skill Icons](https://skillicons.dev) | Ícones de tecnologias | Os ícones quebram. Alternativa: Devicon via jsDelivr. |
-| [Shields.io](https://shields.io) | Badges de interesses e contato | Os badges quebram. |
+| [Skill Icons](https://skillicons.dev) | Ícones de linguagens e ferramentas | Os ícones quebram. Alternativa: Devicon via jsDelivr. |
+| [Skills Icons (syvixor)](https://skills.syvixor.com) | Ícones de contato (Instagram e WhatsApp). É um fork do Skill Icons que tem o WhatsApp, que o original não tem. | Os ícones de contato quebram, mas os links continuam certos. Alternativa: trocar pelo Skill Icons (Instagram) ou por um badge do Shields.io. |
+| [Shields.io](https://shields.io) | Badges de interesses (seção Sobre mim) | Os badges quebram. |
 | [Platane/snk](https://github.com/Platane/snk) | Cobrinha (dentro do workflow) | O workflow falha e a cobrinha antiga continua no ar. |
 
 Esses cards têm cache: depois de um commit ou contribuição nova, pode levar algumas horas para o número mudar.
@@ -45,11 +46,16 @@ Esses cards têm cache: depois de um commit ou contribuição nova, pode levar a
 
 ## Atualizar contatos
 
-Os contatos ficam na seção **Contato** do `README.md`, como badges do Shields.io. Para acrescentar LinkedIn ou e-mail:
+Os contatos ficam na seção **Contato** do `README.md`, em grupos com título (**Redes sociais** e **Mensagens**) e só com ícones, no mesmo estilo de quadradinho das tecnologias. Para acrescentar LinkedIn ou e-mail, ponha o ícone dentro do grupo certo, ao lado dos que já existem:
 
 ```html
-<a href="https://www.linkedin.com/in/SEU-USUARIO"><img src="https://img.shields.io/badge/LinkedIn-perfil-12304f?style=for-the-badge&logo=linkedin&logoColor=00e5ff&labelColor=0b1220" alt="LinkedIn" /></a>
-<a href="mailto:SEU-EMAIL"><img src="https://img.shields.io/badge/E--mail-enviar-12304f?style=for-the-badge&logo=gmail&logoColor=00e5ff&labelColor=0b1220" alt="Enviar e-mail" /></a>
+<a href="https://www.instagram.com/eoleozk"><img src="https://skills.syvixor.com/api/icons?i=instagram&theme=dark" alt="Instagram" /></a>
+<a href="https://www.linkedin.com/in/SEU-USUARIO"><img src="https://skills.syvixor.com/api/icons?i=linkedin&theme=dark" alt="LinkedIn" /></a>
+```
+
+```html
+<a href="https://wa.link/qjufj8"><img src="https://skills.syvixor.com/api/icons?i=whatsapp&theme=dark" alt="WhatsApp" /></a>
+<a href="mailto:SEU-EMAIL"><img src="https://skills.syvixor.com/api/icons?i=gmail&theme=dark" alt="E-mail" /></a>
 ```
 
 ## Mudar o visual
