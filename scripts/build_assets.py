@@ -217,7 +217,6 @@ SECTIONS = [
     ("stack", "Tecnologias"),
     ("projetos", "Projetos"),
     ("dashboard", "Dashboard"),
-    ("contato", "Contato"),
     ("cobrinha", "Cobrinha"),
 ]
 
@@ -335,6 +334,50 @@ def placeholder_card(static=False) -> str:
 
 
 # ---------------------------------------------------------------------------
+# título "Contatos" (chamativo; os ícones ficam no README, logo abaixo)
+# ---------------------------------------------------------------------------
+def contacts_banner(static=False) -> str:
+    W, H = 1000, 112
+    an = Anim(static)
+    cx, cy = W / 2, 56
+    L, R = cx - 180, cx + 180                      # onde as linhas laterais terminam
+    flow = an.tag('<animateTransform attributeName="gradientTransform" type="translate" '
+                  'from="0 0" to="760 0" dur="5s" repeatCount="indefinite"/>')
+    o = [svg_open(W, H, "Contatos", "Título Contatos com gradiente animado em ciano e azul")]
+    o.append(f'''<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{BG0}"/><stop offset="1" stop-color="{BG1}"/></linearGradient>
+<linearGradient id="tt" gradientUnits="userSpaceOnUse" x1="{cx - 190}" y1="0" x2="{cx + 190}" y2="0" spreadMethod="reflect"><stop offset="0" stop-color="{CYAN}"/><stop offset="1" stop-color="{BLUE}"/>{flow}</linearGradient>
+<linearGradient id="ll" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{CYAN}" stop-opacity="0"/><stop offset="1" stop-color="{CYAN}"/></linearGradient>
+<linearGradient id="lr" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{CYAN}"/><stop offset="1" stop-color="{CYAN}" stop-opacity="0"/></linearGradient>
+<filter id="glow" x="-20%" y="-60%" width="140%" height="220%"><feGaussianBlur stdDeviation="10"/></filter>
+</defs>''')
+    o.append(f'<rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="16" fill="url(#bg)" stroke="{CYAN}" stroke-opacity="0.28"/>')
+    for d in ("M16 38V16H38", f"M{W - 38} 16H{W - 16}V38", f"M16 {H - 38}V{H - 16}H38", f"M{W - 38} {H - 16}H{W - 16}V{H - 38}"):
+        o.append(f'<path d="{d}" fill="none" stroke="{CYAN}" stroke-opacity="0.55" stroke-width="1.6" stroke-linecap="round"/>')
+
+    # linhas laterais, pontinho viajando em direção ao título e anel pulsando nas pontas
+    o.append(f'<rect x="70" y="{cy - 1.5}" width="{L - 70}" height="3" rx="1.5" fill="url(#ll)"/>')
+    o.append(f'<rect x="{R}" y="{cy - 1.5}" width="{W - 70 - R}" height="3" rx="1.5" fill="url(#lr)"/>')
+    for x_end, x_start in ((L, 70), (R, W - 70)):
+        travel = an.tag(f'<animate attributeName="cx" values="{x_start};{x_end}" dur="2.4s" repeatCount="indefinite"/>'
+                        f'<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.2;0.8;1" dur="2.4s" repeatCount="indefinite"/>')
+        o.append(f'<circle cx="{x_end}" cy="{cy}" r="3" fill="{CYAN}">{travel}</circle>')
+        pulse = an.tag('<animate attributeName="r" values="5;14" dur="2s" repeatCount="indefinite"/>'
+                       '<animate attributeName="opacity" values="0.8;0" dur="2s" repeatCount="indefinite"/>')
+        o.append(f'<circle cx="{x_end}" cy="{cy}" r="5" fill="none" stroke="{CYAN}" stroke-width="1.5" opacity="0.5">{pulse}</circle>')
+        o.append(f'<circle cx="{x_end}" cy="{cy}" r="4" fill="{CYAN}"/>')
+
+    # título: brilho pulsando atrás + texto com gradiente fluindo
+    breathe = an.tag('<animate attributeName="opacity" values="0.25;0.6;0.25" dur="3s" repeatCount="indefinite"/>')
+    o.append(f'<text class="s" x="{cx}" y="75" font-size="54" font-weight="800" text-anchor="middle" '
+             f'fill="{CYAN}" opacity="0.4" filter="url(#glow)">Contatos{breathe}</text>')
+    o.append(f'<text class="s" x="{cx}" y="75" font-size="54" font-weight="800" text-anchor="middle" '
+             f'fill="url(#tt)">Contatos{an.tag(fade_in(0.1, 0.7))}</text>')
+    o.append("</svg>")
+    return "".join(o)
+
+
+# ---------------------------------------------------------------------------
 # rodapé
 # ---------------------------------------------------------------------------
 def footer(static=False) -> str:
@@ -371,6 +414,7 @@ def main():
     (out / "cards").mkdir(parents=True, exist_ok=True)
 
     files = {"banner.svg": banner(args.static), "footer.svg": footer(args.static),
+             "contatos.svg": contacts_banner(args.static),
              "cards/placeholder.svg": placeholder_card(args.static)}
     for slug, title in SECTIONS:
         files[f"section-{slug}.svg"] = section_header(title, args.static)
