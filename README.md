@@ -65,18 +65,22 @@ sites no ar:
 
 <br />
 
-<div align="center">
-
+<p align="center">
 <img src="https://raw.githubusercontent.com/eoleozk245/eoleozk245/output/overview.svg" alt="Visão geral: repositórios públicos, contribuições, commits e pull requests" width="100%" />
+</p>
 
-<img src="https://github-readme-stats.vercel.app/api?username=eoleozk245&show_icons=true&locale=pt-br&include_all_commits=true&border_radius=12&bg_color=0b1220&border_color=12304f&title_color=00e5ff&text_color=c9d1d9&icon_color=2f81f7&ring_color=00e5ff" alt="Estatísticas do GitHub" height="190" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=eoleozk245&layout=compact&langs_count=6&locale=pt-br&border_radius=12&bg_color=0b1220&border_color=12304f&title_color=00e5ff&text_color=c9d1d9" alt="Linguagens mais usadas" height="190" />
+<p align="center">
+<img src="https://github-readme-stats.vercel.app/api?username=eoleozk245&show_icons=true&locale=pt-br&include_all_commits=true&border_radius=12&bg_color=0b1220&border_color=12304f&title_color=00e5ff&text_color=c9d1d9&icon_color=2f81f7&ring_color=00e5ff" alt="Estatísticas do GitHub" width="49%" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=eoleozk245&layout=donut&langs_count=6&card_width=467&locale=pt-br&border_radius=12&bg_color=0b1220&border_color=12304f&title_color=00e5ff&text_color=c9d1d9" alt="Linguagens mais usadas" width="49%" />
+</p>
 
-<img src="https://streak-stats.demolab.com?user=eoleozk245&locale=pt_BR&border_radius=12&background=0b1220&border=12304f&stroke=12304f&ring=00e5ff&fire=2f81f7&currStreakNum=e6edf3&sideNums=e6edf3&currStreakLabel=00e5ff&sideLabels=c9d1d9&dates=8b949e" alt="Sequência de contribuições" height="190" />
+<p align="center">
+<img src="https://streak-stats.demolab.com?user=eoleozk245&locale=pt_BR&border_radius=12&background=0b1220&border=12304f&stroke=12304f&ring=00e5ff&fire=2f81f7&currStreakNum=e6edf3&sideNums=e6edf3&currStreakLabel=00e5ff&sideLabels=c9d1d9&dates=8b949e" alt="Sequência de contribuições" width="49%" />
+</p>
 
+<p align="center">
 <img src="https://raw.githubusercontent.com/eoleozk245/eoleozk245/output/activity.svg" alt="Gráfico de contribuições por semana nos últimos 12 meses" width="100%" />
-
-</div>
+</p>
 
 <br />
 
