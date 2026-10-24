@@ -94,16 +94,10 @@ sites no ar:
 
 <br />
 
-<h3 align="center">Redes sociais</h3>
-
 <p align="center">
-<a href="https://www.instagram.com/eoleozk"><img src="https://skills.syvixor.com/api/icons?i=instagram&theme=dark" alt="Instagram @eoleozk" /></a>
-</p>
-
-<h3 align="center">Mensagens</h3>
-
-<p align="center">
-<a href="https://wa.link/qjufj8"><img src="https://skills.syvixor.com/api/icons?i=whatsapp&theme=dark" alt="Conversar pelo WhatsApp" /></a>
+<a href="https://www.instagram.com/eoleozk"><img src="https://skills.syvixor.com/api/icons?i=instagram&theme=dark" alt="Instagram @eoleozk" /></a>&nbsp;&nbsp;
+<a href="https://wa.link/qjufj8"><img src="https://skills.syvixor.com/api/icons?i=whatsapp&theme=dark" alt="Conversar pelo WhatsApp" /></a>&nbsp;&nbsp;
+<a href="mailto:leonardopessoaletec@gmail.com"><img src="https://skills.syvixor.com/api/icons?i=gmail&theme=dark" alt="Enviar e-mail para leonardopessoaletec@gmail.com" /></a>
 </p>
 
 <br />
