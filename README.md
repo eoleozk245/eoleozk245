@@ -28,11 +28,17 @@ Aprendo na prática, com estudo contínuo e projetos reais, para fortalecer minh
 
 <br />
 
-<div align="center">
+<h3 align="center">Linguagens</h3>
 
-<img src="https://skillicons.dev/icons?i=html,css,js,supabase,vscode,git,github&theme=dark&perline=7" alt="HTML, CSS, JavaScript, Supabase, Visual Studio Code, Git e GitHub" />
+<p align="center">
+<img src="https://skillicons.dev/icons?i=html,css,js&theme=dark" alt="HTML, CSS e JavaScript" />
+</p>
 
-</div>
+<h3 align="center">Ferramentas</h3>
+
+<p align="center">
+<img src="https://skillicons.dev/icons?i=supabase,vscode,git,github&theme=dark" alt="Supabase, Visual Studio Code, Git e GitHub" />
+</p>
 
 <br />
 
@@ -70,8 +76,8 @@ sites no ar:
 </p>
 
 <p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=eoleozk245&show_icons=true&locale=pt-br&include_all_commits=true&border_radius=12&bg_color=0b1220&border_color=12304f&title_color=00e5ff&text_color=c9d1d9&icon_color=2f81f7&ring_color=00e5ff" alt="Estatísticas do GitHub" width="49%" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=eoleozk245&layout=donut&langs_count=6&card_width=467&locale=pt-br&border_radius=12&bg_color=0b1220&border_color=12304f&title_color=00e5ff&text_color=c9d1d9" alt="Linguagens mais usadas" width="49%" />
+<img src="https://github-readme-stats.vercel.app/api?username=eoleozk245&show_icons=true&locale=pt-br&include_all_commits=true&border_radius=12&bg_color=0b1220&border_color=12304f&title_color=00e5ff&text_color=c9d1d9&icon_color=2f81f7&ring_color=00e5ff" alt="Estatísticas do GitHub" width="49%" align="top" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=eoleozk245&layout=compact&langs_count=6&card_width=467&locale=pt-br&border_radius=12&bg_color=0b1220&border_color=12304f&title_color=00e5ff&text_color=c9d1d9" alt="Linguagens mais usadas" width="49%" align="top" />
 </p>
 
 <p align="center">
@@ -88,12 +94,17 @@ sites no ar:
 
 <br />
 
-<div align="center">
+<h3 align="center">Redes sociais</h3>
 
-<a href="https://www.instagram.com/eoleozk"><img src="https://img.shields.io/badge/Instagram-%40eoleozk-12304f?style=for-the-badge&logo=instagram&logoColor=00e5ff&labelColor=0b1220" alt="Instagram @eoleozk" /></a>
-<a href="https://wa.link/qjufj8"><img src="https://img.shields.io/badge/WhatsApp-conversar-12304f?style=for-the-badge&logo=whatsapp&logoColor=00e5ff&labelColor=0b1220" alt="Conversar pelo WhatsApp" /></a>
+<p align="center">
+<a href="https://www.instagram.com/eoleozk"><img src="https://skills.syvixor.com/api/icons?i=instagram&theme=dark" alt="Instagram @eoleozk" /></a>
+</p>
 
-</div>
+<h3 align="center">Mensagens</h3>
+
+<p align="center">
+<a href="https://wa.link/qjufj8"><img src="https://skills.syvixor.com/api/icons?i=whatsapp&theme=dark" alt="Conversar pelo WhatsApp" /></a>
+</p>
 
 <br />
 
