@@ -8,17 +8,18 @@
 
 <br />
 
-Sou **estudante de Informática para Internet** na **ETEC Darcy Pereira de Moraes**, em Itapetininga, SP. Meu foco é programação, desenvolvimento web e criação de soluções digitais.
+I'm an **Informatics for Internet student** at **ETEC Darcy Pereira de Moraes**, in Itapetininga, SP, Brazil. My focus is programming, web development and building digital solutions.
 
-Hoje estou aprimorando **HTML, CSS e JavaScript**, construindo páginas, interfaces responsivas e funcionalidades interativas, e também uso o **Supabase** nos meus projetos. Tenho interesse em **inteligência artificial**, **cibersegurança** e **desenvolvimento de software**.
+Right now I'm sharpening my **HTML, CSS and JavaScript**, building pages, responsive interfaces and interactive features, and I also use **Supabase** in my projects. I'm studying **cybersecurity**, **digital art**, **Excel** and **Word**, and I'm interested in **artificial intelligence** and **software development**.
 
-Aprendo na prática, com estudo contínuo e projetos reais, para fortalecer minha lógica de programação e criar aplicações organizadas, funcionais e eficientes.
+I learn by doing, with continuous study and real projects, to strengthen my programming logic and build organized, functional and efficient applications.
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/foco-desenvolvimento%20web-12304f?style=for-the-badge&labelColor=0b1220&color=12304f" alt="Foco: desenvolvimento web" />
-<img src="https://img.shields.io/badge/interesse-intelig%C3%AAncia%20artificial-12304f?style=for-the-badge&labelColor=0b1220&color=12304f" alt="Interesse: inteligência artificial" />
-<img src="https://img.shields.io/badge/interesse-ciberseguran%C3%A7a-12304f?style=for-the-badge&labelColor=0b1220&color=12304f" alt="Interesse: cibersegurança" />
+<img src="https://img.shields.io/badge/focus-web%20development-12304f?style=for-the-badge&labelColor=0b1220&color=12304f" alt="Focus: web development" />
+<img src="https://img.shields.io/badge/studying-cybersecurity-12304f?style=for-the-badge&labelColor=0b1220&color=12304f" alt="Studying: cybersecurity" />
+<img src="https://img.shields.io/badge/studying-digital%20art%2C%20Excel%20%26%20Word-12304f?style=for-the-badge&labelColor=0b1220&color=12304f" alt="Studying: digital art, Excel and Word" />
+<img src="https://img.shields.io/badge/interest-artificial%20intelligence-12304f?style=for-the-badge&labelColor=0b1220&color=12304f" alt="Interest: artificial intelligence" />
 
 </div>
 
