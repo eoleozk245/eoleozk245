@@ -1,39 +1,108 @@
-<img data-importer="snake" src="https://raw.githubusercontent.com/eoleozk245/eoleozk245/snake-output/snake.svg" alt="Snake animation" />
+<div align="center">
 
-###
+<img src="assets/banner.svg" alt="Leonardo — Desenvolvimento Web e Tecnologia" width="100%" />
 
-<h2 data-importer="text" align="center">🌐 CONTATO 🌐</h2>
-
-###
-
-<div data-importer="socials" align="center">
-  <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="52" height="40" alt="linkedin logo"  />
-  <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/gmail/default.svg" width="52" height="40" alt="gmail logo"  />
-  <a href="https://www.instagram.com/eoleozk?obrf=MnptcWN4amNpdXp6&utm_source=qr" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/instagram/default.svg" width="52" height="40" alt="instagram logo"  />
-  </a>
-  <a href="wa.link/qjufj8" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/whatsapp/default.svg" width="52" height="40" alt="whatsapp logo"  />
-  </a>
 </div>
 
-###
+<img src="assets/section-sobre.svg" alt="Sobre mim" width="100%" />
 
-<div data-importer="techs" align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=supabase" height="40" alt="supabase logo"  />
+<br />
+
+Sou **estudante de Informática para Internet** na **ETEC Darcy Pereira de Moraes**, em Itapetininga, SP. Meu foco é programação, desenvolvimento web e criação de soluções digitais.
+
+Hoje estou aprimorando **HTML, CSS e JavaScript**, construindo páginas, interfaces responsivas e funcionalidades interativas, e também uso o **Supabase** nos meus projetos. Tenho interesse em **inteligência artificial**, **cibersegurança** e **desenvolvimento de software**.
+
+Aprendo na prática, com estudo contínuo e projetos reais, para fortalecer minha lógica de programação e criar aplicações organizadas, funcionais e eficientes.
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/foco-desenvolvimento%20web-12304f?style=for-the-badge&labelColor=0b1220&color=12304f" alt="Foco: desenvolvimento web" />
+<img src="https://img.shields.io/badge/interesse-intelig%C3%AAncia%20artificial-12304f?style=for-the-badge&labelColor=0b1220&color=12304f" alt="Interesse: inteligência artificial" />
+<img src="https://img.shields.io/badge/interesse-ciberseguran%C3%A7a-12304f?style=for-the-badge&labelColor=0b1220&color=12304f" alt="Interesse: cibersegurança" />
+
 </div>
 
-###
+<br />
 
-<div data-importer="stats" align="center">
-  <img src="https://raw.githubusercontent.com/eoleozk245/eoleozk245/stats-output/stats.svg?hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false&order=1" height="150" alt="stats graph"  />
-  <img src="https://raw.githubusercontent.com/eoleozk245/eoleozk245/languages-output/languages.svg?locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false&order=2" height="150" alt="languages graph"  />
+<img src="assets/section-stack.svg" alt="Tecnologias e ferramentas" width="100%" />
+
+<br />
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=html,css,js,supabase,vscode,git,github&theme=dark&perline=7" alt="HTML, CSS, JavaScript, Supabase, Visual Studio Code, Git e GitHub" />
+
 </div>
 
-###
+<br />
+
+<img src="assets/section-projetos.svg" alt="Projetos em destaque" width="100%" />
+
+<br />
+
+<div align="center">
+
+<a href="https://github.com/eoleozk245/Site-SUSTENTABILIDADE-FETEC"><img src="assets/cards/sustentabilidade.svg" alt="Site-SUSTENTABILIDADE-FETEC: vitrine com 14 projetos de sustentabilidade e tecnologia da turma" width="49%" /></a>
+<a href="https://github.com/eoleozk245/BARBEARIA-Daniel"><img src="assets/cards/barbearia.svg" alt="BARBEARIA-Daniel: sistema de barbearia com agendamento online" width="49%" /></a>
+<a href="https://github.com/eoleozk245/SITE-JOGOS-FETEC"><img src="assets/cards/jogos.svg" alt="SITE-JOGOS-FETEC: galeria com 14 jogos em JavaScript" width="49%" /></a>
+<a href="https://github.com/eoleozk245/FETEC-2026"><img src="assets/cards/fetec-2026.svg" alt="FETEC-2026: plataforma de jogos Scratch com Supabase" width="49%" /></a>
+<a href="https://github.com/eoleozk245/ecocity-os-core"><img src="assets/cards/ecocity.svg" alt="ecocity-os-core: site EcoCity OS criado com Lovable" width="49%" /></a>
+<img src="assets/cards/placeholder.svg" alt="Espaço reservado para o próximo projeto" width="49%" />
+
+<sub>
+sites no ar:
+<a href="https://eoleozk245.github.io/Site-SUSTENTABILIDADE-FETEC/">sustentabilidade</a> ·
+<a href="https://barbearia-daniel-lime.vercel.app">barbearia</a> ·
+<a href="https://eoleozk245.github.io/SITE-JOGOS-FETEC/">jogos</a> ·
+<a href="https://eoleozk245.github.io/FETEC-2026/">FETEC 2026</a>
+</sub>
+
+</div>
+
+<br />
+
+<img src="assets/section-dashboard.svg" alt="Dashboard do GitHub" width="100%" />
+
+<br />
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/eoleozk245/eoleozk245/output/overview.svg" alt="Visão geral: repositórios públicos, contribuições, commits e pull requests" width="100%" />
+
+<img src="https://github-readme-stats.vercel.app/api?username=eoleozk245&show_icons=true&locale=pt-br&include_all_commits=true&border_radius=12&bg_color=0b1220&border_color=12304f&title_color=00e5ff&text_color=c9d1d9&icon_color=2f81f7&ring_color=00e5ff" alt="Estatísticas do GitHub" height="190" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=eoleozk245&layout=compact&langs_count=6&locale=pt-br&border_radius=12&bg_color=0b1220&border_color=12304f&title_color=00e5ff&text_color=c9d1d9" alt="Linguagens mais usadas" height="190" />
+
+<img src="https://streak-stats.demolab.com?user=eoleozk245&locale=pt_BR&border_radius=12&background=0b1220&border=12304f&stroke=12304f&ring=00e5ff&fire=2f81f7&currStreakNum=e6edf3&sideNums=e6edf3&currStreakLabel=00e5ff&sideLabels=c9d1d9&dates=8b949e" alt="Sequência de contribuições" height="190" />
+
+<img src="https://raw.githubusercontent.com/eoleozk245/eoleozk245/output/activity.svg" alt="Gráfico de contribuições por semana nos últimos 12 meses" width="100%" />
+
+</div>
+
+<br />
+
+<img src="assets/section-contato.svg" alt="Contato" width="100%" />
+
+<br />
+
+<div align="center">
+
+<a href="https://www.instagram.com/eoleozk"><img src="https://img.shields.io/badge/Instagram-%40eoleozk-12304f?style=for-the-badge&logo=instagram&logoColor=00e5ff&labelColor=0b1220" alt="Instagram @eoleozk" /></a>
+<a href="https://wa.link/qjufj8"><img src="https://img.shields.io/badge/WhatsApp-conversar-12304f?style=for-the-badge&logo=whatsapp&logoColor=00e5ff&labelColor=0b1220" alt="Conversar pelo WhatsApp" /></a>
+
+</div>
+
+<br />
+
+<img src="assets/section-cobrinha.svg" alt="Cobrinha das contribuições" width="100%" />
+
+<br />
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/eoleozk245/eoleozk245/output/snake-dark.svg" alt="Cobrinha percorrendo meu gráfico de contribuições do GitHub" width="100%" />
+
+<br />
+
+<img src="assets/footer.svg" alt="valeu pela visita!" width="100%" />
+
+</div>
