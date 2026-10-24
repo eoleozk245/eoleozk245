@@ -1,30 +1,17 @@
-# preview
-
-### A  compact card_width=467 (top)
+### I1 shields icon-only
 
 <p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=eoleozk245&show_icons=true&locale=pt-br&include_all_commits=true&border_radius=12&bg_color=0b1220&border_color=12304f&title_color=00e5ff&text_color=c9d1d9&icon_color=2f81f7&ring_color=00e5ff" width="49%" align="top" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=eoleozk245&locale=pt-br&border_radius=12&bg_color=0b1220&border_color=12304f&title_color=00e5ff&text_color=c9d1d9&layout=compact&langs_count=6&card_width=467" width="49%" align="top" />
+<a href="https://www.instagram.com/eoleozk"><img src="https://img.shields.io/badge/-%20-12304f?style=for-the-badge&logo=instagram&logoColor=00e5ff&labelColor=12304f" alt="Instagram" /></a>
+<a href="https://wa.link/qjufj8"><img src="https://img.shields.io/badge/-%20-12304f?style=for-the-badge&logo=whatsapp&logoColor=00e5ff&labelColor=12304f" alt="WhatsApp" /></a>
 </p>
 
-### B  donut default
+### I2 simple-icons cyan 36px
 
 <p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=eoleozk245&show_icons=true&locale=pt-br&include_all_commits=true&border_radius=12&bg_color=0b1220&border_color=12304f&title_color=00e5ff&text_color=c9d1d9&icon_color=2f81f7&ring_color=00e5ff" width="49%" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=eoleozk245&locale=pt-br&border_radius=12&bg_color=0b1220&border_color=12304f&title_color=00e5ff&text_color=c9d1d9&layout=donut&langs_count=6" width="49%" />
+<a href="https://www.instagram.com/eoleozk"><img src="https://cdn.simpleicons.org/instagram/00e5ff" alt="Instagram" width="36" height="36" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://wa.link/qjufj8"><img src="https://cdn.simpleicons.org/whatsapp/00e5ff" alt="WhatsApp" width="36" height="36" /></a>
 </p>
 
-### C  donut card_width=380
+### I3 skillicons (instagram) + linkedin + gmail so p/ referencia de estilo
 
-<p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=eoleozk245&show_icons=true&locale=pt-br&include_all_commits=true&border_radius=12&bg_color=0b1220&border_color=12304f&title_color=00e5ff&text_color=c9d1d9&icon_color=2f81f7&ring_color=00e5ff" width="49%" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=eoleozk245&locale=pt-br&border_radius=12&bg_color=0b1220&border_color=12304f&title_color=00e5ff&text_color=c9d1d9&layout=donut&langs_count=6&card_width=380" width="49%" />
-</p>
-
-### D  donut-vertical default
-
-<p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=eoleozk245&show_icons=true&locale=pt-br&include_all_commits=true&border_radius=12&bg_color=0b1220&border_color=12304f&title_color=00e5ff&text_color=c9d1d9&icon_color=2f81f7&ring_color=00e5ff" width="49%" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=eoleozk245&locale=pt-br&border_radius=12&bg_color=0b1220&border_color=12304f&title_color=00e5ff&text_color=c9d1d9&layout=donut-vertical&langs_count=6" width="49%" />
-</p>
-
+<p align="center"><img src="https://skillicons.dev/icons?i=instagram,linkedin,gmail&theme=dark" /></p>
