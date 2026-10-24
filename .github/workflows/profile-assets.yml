@@ -1,0 +1,64 @@
+name: Profile assets
+
+# Gera a cobrinha das contribuições e os SVGs do dashboard (visão geral e
+# gráfico de atividade) e publica tudo no branch "output".
+# Não usa nenhum segredo: apenas o GITHUB_TOKEN que o próprio GitHub entrega.
+
+on:
+  schedule:
+    - cron: "17 6 * * *"   # todo dia às 06:17 UTC (03:17 em Brasília)
+  workflow_dispatch:        # botão "Run workflow" na aba Actions
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/profile-assets.yml"
+      - "scripts/generate_dashboard.py"
+      - "scripts/theme.py"
+
+permissions: {}             # nada por padrão; o job pede só o que precisa
+
+concurrency:
+  group: profile-assets
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    name: Gerar e publicar
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write       # necessário para atualizar o branch "output"
+    steps:
+      - name: Baixar o repositório
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - name: Gerar a cobrinha (Platane/snk)
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake-dark.svg?color_snake=#00e5ff&color_dots=#0d1b2a,#0b3a5b,#0d5fa8,#1f6feb,#2f81f7
+
+      - name: Aplicar fundo escuro na cobrinha
+        run: python3 scripts/generate_dashboard.py snake dist/snake-dark.svg
+
+      - name: Gerar visão geral e gráfico de atividade
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          PROFILE_USER: ${{ github.repository_owner }}
+        run: python3 scripts/generate_dashboard.py dashboard --out dist
+
+      - name: Publicar no branch output
+        if: github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cd dist
+          git init -q -b output
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "chore: atualizar assets do perfil"
+          git push -f "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" output
