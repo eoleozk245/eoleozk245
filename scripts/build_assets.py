@@ -213,35 +213,29 @@ def banner(static=False) -> str:
 # cabeçalhos de seção (estilo prompt de terminal)
 # ---------------------------------------------------------------------------
 SECTIONS = [
-    ("sobre", "cat sobre.md"),
-    ("stack", "ls ./stack"),
-    ("projetos", "ls ./projetos"),
-    ("dashboard", "git log --stat"),
-    ("contato", "contato --abrir"),
-    ("cobrinha", "snake --run"),
+    ("sobre", "Sobre mim"),
+    ("stack", "Tecnologias"),
+    ("projetos", "Projetos"),
+    ("dashboard", "Dashboard"),
+    ("contato", "Contato"),
+    ("cobrinha", "Cobrinha"),
 ]
 
 
-def section_header(cmd: str, idx: int, total: int, static=False) -> str:
+def section_header(title: str, static=False) -> str:
+    """Barra de seção: só o título, uma linha tracejada animada e o destaque lateral."""
     W, H = 1000, 52
     an = Anim(static)
-    cw = 10.8
-    n = len(cmd)
-    line_x0 = 52 + n * cw + 36
-    o = [svg_open(W, H, f"Seção: {cmd}", f"Cabeçalho de seção no estilo terminal: {cmd}")]
+    line_x0 = 26 + len(title) * 11.5 + 24          # estimativa da largura do título (sans 20px, peso 600)
+    o = [svg_open(W, H, f"Seção: {title}", f"Cabeçalho da seção {title}")]
     o.append(f'<defs><linearGradient id="bar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{CYAN}"/>'
              f'<stop offset="1" stop-color="{BLUE}"/></linearGradient></defs>')
     o.append(f'<rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="12" fill="{BG1}" stroke="{BORDER}"/>')
     o.append(f'<rect x="0" y="9" width="4" height="{H - 18}" rx="2" fill="url(#bar)"/>')
-    o.append(f'<text class="m" x="26" y="33" font-size="18" fill="{BLUE}">$</text>')
-    o.append(f'<text class="m" x="52" y="33" font-size="18" fill="{TEXT}" textLength="{n * cw:.1f}" lengthAdjust="spacing">{esc(cmd)}</text>')
-    blink = an.tag('<animate attributeName="opacity" values="1;0" dur="1s" calcMode="discrete" repeatCount="indefinite"/>')
-    o.append(f'<rect x="{52 + n * cw + 6:.1f}" y="17" width="8" height="19" fill="{CYAN}">{blink}</rect>')
+    o.append(f'<text class="s" x="26" y="33" font-size="20" font-weight="600" fill="{TEXT}">{esc(title)}</text>')
     march = an.tag('<animate attributeName="stroke-dashoffset" from="0" to="-18" dur="1.4s" repeatCount="indefinite"/>')
-    o.append(f'<line x1="{line_x0:.1f}" y1="27" x2="900" y2="27" stroke="{DIM}" stroke-width="2" '
+    o.append(f'<line x1="{line_x0:.1f}" y1="27" x2="{W - 28}" y2="27" stroke="{DIM}" stroke-width="2" '
              f'stroke-dasharray="2 7" stroke-linecap="round">{march}</line>')
-    o.append(f'<text class="m" x="972" y="32" font-size="14" fill="{MUTED}" text-anchor="end">'
-             f'<tspan fill="{CYAN}">0{idx}</tspan> / 0{total}</text>')
     o.append("</svg>")
     return "".join(o)
 
@@ -361,8 +355,7 @@ def footer(static=False) -> str:
         move = an.tag(f'<animateTransform attributeName="transform" type="translate" from="0 0" to="-{period} 0" dur="{dur}s" repeatCount="indefinite"/>')
         o.append(f'<path d="{d}" fill="none" stroke="url(#wv)" stroke-width="2" opacity="{op}">{move}</path>')
     o.append("</g>")
-    o.append(f'<text class="m" x="500" y="50" font-size="17" fill="{MUTED}" text-anchor="middle">'
-             f'<tspan fill="{BLUE}">$</tspan> <tspan fill="{TEXT}">echo</tspan> <tspan fill="#7ee7d9">"valeu pela visita!"</tspan></text>')
+    o.append(f'<text class="m" x="500" y="50" font-size="17" fill="#7ee7d9" text-anchor="middle">valeu pela visita!</text>')
     o.append(f'<rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="16" fill="none" stroke="{BORDER}"/>')
     o.append("</svg>")
     return "".join(o)
@@ -379,8 +372,8 @@ def main():
 
     files = {"banner.svg": banner(args.static), "footer.svg": footer(args.static),
              "cards/placeholder.svg": placeholder_card(args.static)}
-    for i, (slug, cmd) in enumerate(SECTIONS, start=1):
-        files[f"section-{slug}.svg"] = section_header(cmd, i, len(SECTIONS), args.static)
+    for slug, title in SECTIONS:
+        files[f"section-{slug}.svg"] = section_header(title, args.static)
     for p in PROJECTS:
         files[f"cards/{p['slug']}.svg"] = project_card(p, args.static)
 
