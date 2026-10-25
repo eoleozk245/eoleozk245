@@ -25,19 +25,17 @@ I learn by doing, with continuous study and real projects, to strengthen my prog
 
 <br />
 
-<p align="center"><img src="assets/section-stack.svg" alt="Minhas tecnologias" width="520" /></p>
-
-<br />
-
-<p align="center">
 <p align="center"><img src="assets/contatos.svg" alt="Fale comigo" width="520" /></p>
-</p>
 
 <p align="center">
 <a href="https://www.instagram.com/eoleozk"><img src="https://skills.syvixor.com/api/icons?i=instagram&theme=light" alt="Instagram @eoleozk" /></a>&nbsp;&nbsp;
 <a href="https://wa.link/qjufj8"><img src="https://skills.syvixor.com/api/icons?i=whatsapp&theme=light" alt="Conversar pelo WhatsApp" /></a>&nbsp;&nbsp;
 <a href="mailto:leonardopessoaletec@gmail.com"><img src="https://skills.syvixor.com/api/icons?i=gmail&theme=light" alt="Enviar e-mail para leonardopessoaletec@gmail.com" /></a>
 </p>
+
+<br />
+
+<p align="center"><img src="assets/section-stack.svg" alt="Minhas tecnologias" width="520" /></p>
 
 <h3 align="center">Linguagens</h3>
 
