@@ -66,9 +66,10 @@ def frame(W, H, rx, body, defs_extra="", fonts="", seed=0, label=""):
 
 
 def arrow(cx, cy, r):
+    """Seta apontando para baixo."""
     s = r * .42
     return (f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="{ACC}" stroke="{INK}" stroke-width="1.5"/>'
-            f'<path d="M{cx - s} {cy + s} L{cx + s} {cy - s} M{cx - s * .15} {cy - s} H{cx + s} V{cy + s * .15}" fill="none" '
+            f'<path d="M{cx} {cy - s} V{cy + s} M{cx - s} {cy + s * .05} L{cx} {cy + s} L{cx + s} {cy + s * .05}" fill="none" '
             f'stroke="{INK}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>')
 
 
@@ -157,6 +158,9 @@ def main():
     ap.add_argument("--out", default=str(HERE.parent / "assets"))
     out = Path(ap.parse_args().out)
     files = {f"section-{slug}.svg" if slug != "contatos" else "contatos.svg": section(parts, num) for slug, parts, num in SECTIONS}
+    # a barra "Sobre mim" fica logo abaixo do banner: ganha um respiro transparente no topo
+    sob = files["section-sobre.svg"]
+    files["section-sobre.svg"] = sob.replace('viewBox="0 0 620 46"', 'viewBox="0 -8 620 54"', 1).replace('width="620" height="46"', 'width="620" height="54"', 1)
     files["footer.svg"] = footer()
     files.update(contact_slices())
     files["stack-panel.svg"] = stack_panel()
