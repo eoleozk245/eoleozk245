@@ -108,8 +108,7 @@ def icon_img(name, x, y, size=48):
 
 
 def panel_bg(H):
-    return (f'<defs><linearGradient id="pg" x1="0" y1="0" x2="1" y2="0.6"><stop offset="0" stop-color="#8fcfff"/><stop offset=".5" stop-color="#b4e0ff"/><stop offset="1" stop-color="#82c6fa"/></linearGradient></defs>'
-            f'<rect x="1" y="1" width="{PW - 2}" height="{H - 2}" rx="14" fill="url(#pg)" stroke="#4fb0ee" stroke-width="1.5"/>')
+    return (f'<rect x="1" y="1" width="{PW - 2}" height="{H - 2}" rx="14" fill="#b4e1ff" stroke="#55c7ff" stroke-width="1.5"/>')
 
 
 def pill(cx, y, text):
