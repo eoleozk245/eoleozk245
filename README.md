@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="Leonardo — Desenvolvimento Web e Tecnologia" width="100%" />
+<img src="assets/banner.svg" alt="Web Developer in training — HTML, CSS, JavaScript, Supabase" width="100%" />
 
 </div>
 
