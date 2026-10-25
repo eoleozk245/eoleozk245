@@ -16,10 +16,10 @@ INK, ACC, ACC2 = "#0c0c0c", "#55c7ff", "#2ea8f0"
 # (slug, [(texto, itálico?)...], número)
 SECTIONS = [
     ("sobre", [("Sobre ", False), ("mim", True)], "01"),
-    ("stack", [("Minhas ", False), ("tecnologias", True)], "02"),
-    ("projetos", [("Projetos em ", False), ("destaque", True)], "03"),
-    ("dashboard", [("Dashboard do ", False), ("GitHub", True)], "04"),
-    ("contatos", [("Fale ", False), ("comigo", True)], "05"),
+    ("stack", [("Minhas ", False), ("tecnologias", True)], "03"),
+    ("projetos", [("Projetos em ", False), ("destaque", True)], "04"),
+    ("dashboard", [("Dashboard do ", False), ("GitHub", True)], "05"),
+    ("contatos", [("Fale ", False), ("comigo", True)], "02"),
 ]
 
 
@@ -95,12 +95,71 @@ def footer(W=620, H=46):
     return frame(W, H, 16, body, fonts=fonts, seed=3, label="Obrigado por passar por aqui")
 
 
+# ---------------------------------------------------------------------------
+# painéis claros que ficam logo abaixo das barras (contatos e tecnologias)
+# ---------------------------------------------------------------------------
+PW = 620
+PANEL_FILL, PANEL_STROKE = "#f4faff", "#b9ddf6"
+
+
+def icon_img(name, x, y, size=48):
+    b64 = base64.b64encode((HERE.parent / "assets" / "icons" / f"{name}.svg").read_bytes()).decode()
+    return f'<image x="{x}" y="{y}" width="{size}" height="{size}" href="data:image/svg+xml;base64,{b64}"/>'
+
+
+def panel_bg(H):
+    return (f'<rect x="1" y="1" width="{PW - 2}" height="{H - 2}" rx="16" fill="{PANEL_FILL}" stroke="{PANEL_STROKE}" stroke-width="1.5"/>')
+
+
+def pill(cx, y, text):
+    w = len(text) * 8.2 + 44
+    return (f'<rect x="{cx - w / 2:.1f}" y="{y}" width="{w:.1f}" height="26" rx="13" fill="{INK}"/>'
+            f'<circle cx="{cx - w / 2 + 15:.1f}" cy="{y + 13}" r="3.4" fill="{ACC}"/>'
+            f'<text x="{cx - w / 2 + 26:.1f}" y="{y + 17.5}" font-family="JK" font-weight="700" font-size="13" fill="#fff">{text}</text>')
+
+
+def svg_wrap(vb_x, vb_w, H, inner, fonts, label):
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{vb_x} 0 {vb_w} {H}" width="{vb_w}" height="{H}" role="img" aria-label="{label}">'
+            f'<defs><style>{fonts}</style></defs>{inner}</svg>')
+
+
+def contact_slices():
+    H = 112
+    items = [("instagram", "Instagram"), ("whatsapp", "WhatsApp"), ("gmail", "E-mail")]
+    edges = [0, 207, 413, PW]
+    fonts = fonts_css("", "".join(l for _, l in items))
+    out = {}
+    for i, (ic, label) in enumerate(items):
+        cx = PW / 6 + i * PW / 3
+        inner = (panel_bg(H) + icon_img(ic, round(cx - 28), 18, 56)
+                 + f'<text x="{cx:.1f}" y="{H - 16}" text-anchor="middle" font-family="JK" font-weight="700" font-size="13" fill="{INK}">{label}</text>')
+        out[f"contato-{ic}.svg"] = svg_wrap(edges[i], edges[i + 1] - edges[i], H, inner, fonts, label)
+    return out
+
+
+def stack_panel():
+    H = 248
+    rows = [("Linguagens", ["html", "css", "js"]), ("Ferramentas", ["supabase", "vscode", "git", "github"])]
+    fonts = fonts_css("", "LinguagensFerramentas")
+    inner, y = panel_bg(H), 20
+    for title, icons in rows:
+        inner += pill(PW / 2, y, title)
+        n, size, gap = len(icons), 56, 18
+        x0 = (PW - (n * size + (n - 1) * gap)) / 2
+        for k, ic in enumerate(icons):
+            inner += icon_img(ic, round(x0 + k * (size + gap)), y + 40, size)
+        y += 114
+    return svg_wrap(0, PW, H, inner, fonts, "Linguagens: HTML, CSS, JavaScript. Ferramentas: Supabase, VS Code, Git, GitHub")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default=str(HERE.parent / "assets"))
     out = Path(ap.parse_args().out)
     files = {f"section-{slug}.svg" if slug != "contatos" else "contatos.svg": section(parts, num) for slug, parts, num in SECTIONS}
     files["footer.svg"] = footer()
+    files.update(contact_slices())
+    files["stack-panel.svg"] = stack_panel()
     for n, c in files.items():
         (out / n).write_text(c + "\n", encoding="utf-8"); print("ok", n, f"{len(c) // 1024} KB")
 
