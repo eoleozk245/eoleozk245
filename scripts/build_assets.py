@@ -421,11 +421,8 @@ def main():
     out = Path(args.out)
     (out / "cards").mkdir(parents=True, exist_ok=True)
 
-    files = {"banner.svg": banner(args.static), "footer.svg": footer(args.static),
-             "contatos.svg": section_header("Contatos", args.static, size=19),
-             "cards/placeholder.svg": placeholder_card(args.static)}
-    for slug, title in SECTIONS:
-        files[f"section-{slug}.svg"] = section_header(title, args.static)
+    # banner.svg e os títulos/rodapé agora vêm de scripts/build_headers.py (e do banner animado), não daqui
+    files = {"cards/placeholder.svg": placeholder_card(args.static)}
     for p in PROJECTS:
         files[f"cards/{p['slug']}.svg"] = project_card(p, args.static)
 
