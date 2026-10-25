@@ -72,27 +72,27 @@ def arrow(cx, cy, r):
             f'stroke="{INK}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>')
 
 
-def section(parts, num, H=60, W=1000):
-    serif = "".join(t for t, _ in parts); fs = 31
+def section(parts, num, H=46, W=620):
+    serif = "".join(t for t, _ in parts); fs = 24
     fonts = fonts_css(serif, num)
     cy = H / 2
     tspans = "".join(f'<tspan font-style="{"italic" if it else "normal"}" font-weight="{700 if it else 800}">{t}</tspan>' for t, it in parts)
-    pw = 54
-    body = (f'<rect x="26" y="{cy - 13}" width="{pw}" height="26" rx="13" fill="{INK}"/>'
-            f'<circle cx="40" cy="{cy}" r="3.2" fill="{ACC}"/>'
-            f'<text x="49" y="{cy + 4}" font-family="JK" font-weight="700" font-size="11" fill="{ACC}">{num}</text>'
-            f'<text x="{26 + pw + 16}" y="{cy + fs * .33:.1f}" font-family="PF" font-size="{fs}" letter-spacing="-.6" fill="{INK}">{tspans}</text>'
-            + arrow(W - 26 - 15, cy, 15))
-    return frame(W, H, 22, body, fonts=fonts, seed=int(num), label=serif)
+    pw = 44
+    body = (f'<rect x="20" y="{cy - 10}" width="{pw}" height="20" rx="10" fill="{INK}"/>'
+            f'<circle cx="33" cy="{cy}" r="2.6" fill="{ACC}"/>'
+            f'<text x="41" y="{cy + 3.3}" font-family="JK" font-weight="700" font-size="9" fill="{ACC}">{num}</text>'
+            f'<text x="{20 + pw + 12}" y="{cy + fs * .33:.1f}" font-family="PF" font-size="{fs}" letter-spacing="-.6" fill="{INK}">{tspans}</text>'
+            + arrow(W - 20 - 12, cy, 12))
+    return frame(W, H, 16, body, fonts=fonts, seed=int(num), label=serif)
 
 
-def footer(W=1000, H=64):
+def footer(W=620, H=46):
     parts = [("Obrigado por ", False), ("passar por aqui", True)]
     serif = "".join(t for t, _ in parts)
     fonts = fonts_css(serif, "")
     tspans = "".join(f'<tspan font-style="{"italic" if it else "normal"}" font-weight="{700 if it else 800}">{t}</tspan>' for t, it in parts)
-    body = (f'<text x="{W / 2}" y="{H / 2 + 8}" text-anchor="middle" font-family="PF" font-size="23" letter-spacing="-.5" fill="{INK}">{tspans}</text>')
-    return frame(W, H, 22, body, fonts=fonts, seed=3, label="Obrigado por passar por aqui")
+    body = (f'<text x="{W / 2}" y="{H / 2 + 6}" text-anchor="middle" font-family="PF" font-size="18" letter-spacing="-.5" fill="{INK}">{tspans}</text>')
+    return frame(W, H, 16, body, fonts=fonts, seed=3, label="Obrigado por passar por aqui")
 
 
 def main():

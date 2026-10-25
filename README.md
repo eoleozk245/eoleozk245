@@ -4,7 +4,7 @@
 
 </div>
 
-<img src="assets/section-sobre.svg" alt="Sobre mim" width="100%" />
+<img src="assets/section-sobre.svg" alt="Sobre mim" width="520" />
 
 <br />
 
@@ -25,12 +25,12 @@ I learn by doing, with continuous study and real projects, to strengthen my prog
 
 <br />
 
-<img src="assets/section-stack.svg" alt="Minhas tecnologias" width="100%" />
+<img src="assets/section-stack.svg" alt="Minhas tecnologias" width="520" />
 
 <br />
 
 <p align="center">
-<img src="assets/contatos.svg" alt="Fale comigo" width="100%" />
+<img src="assets/contatos.svg" alt="Fale comigo" width="520" />
 </p>
 
 <p align="center">
@@ -53,7 +53,7 @@ I learn by doing, with continuous study and real projects, to strengthen my prog
 
 <br />
 
-<img src="assets/section-projetos.svg" alt="Projetos em destaque" width="100%" />
+<img src="assets/section-projetos.svg" alt="Projetos em destaque" width="520" />
 
 <br />
 
@@ -70,7 +70,7 @@ I learn by doing, with continuous study and real projects, to strengthen my prog
 
 <br />
 
-<img src="assets/section-dashboard.svg" alt="Dashboard do GitHub" width="100%" />
+<img src="assets/section-dashboard.svg" alt="Dashboard do GitHub" width="520" />
 
 <br />
 
@@ -99,6 +99,6 @@ I learn by doing, with continuous study and real projects, to strengthen my prog
 
 <br />
 
-<img src="assets/footer.svg" alt="Obrigado por passar por aqui" width="100%" />
+<img src="assets/footer.svg" alt="Obrigado por passar por aqui" width="520" />
 
 </div>
