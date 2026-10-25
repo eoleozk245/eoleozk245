@@ -10,7 +10,7 @@
 
 I'm an **Informatics for Internet student** at **ETEC Darcy Pereira de Moraes**, in Itapetininga, SP, Brazil. My focus is programming, web development and building digital solutions.
 
-Right now I'm sharpening my **HTML, CSS and JavaScript**, building pages, responsive interfaces and interactive features, and I also use **Supabase** in my projects. I'm studying **cybersecurity**, **digital art**, **Excel** and **Word**, and I'm interested in **artificial intelligence** and **software development**.
+Right now I'm sharpening my **HTML, CSS and JavaScript**, building pages, responsive interfaces and interactive features, and I also use **Supabase** in my projects. I'm studying **cybersecurity**, **digital art**, **Excel** and **Word**, and I'm interested in **artificial intelligence** and **web development**.
 
 I learn by doing, with continuous study and real projects, to strengthen my programming logic and build organized, functional and efficient applications.
 
