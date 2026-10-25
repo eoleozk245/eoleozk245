@@ -77,7 +77,7 @@ I learn by doing, with continuous study and real projects, to strengthen my prog
 </p>
 
 <p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=eoleozk245&show_icons=true&locale=pt-br&include_all_commits=true&border_radius=12&bg_color=135,cdeeff,eaf7ff&border_color=9fd4f5&title_color=0c0c0c&text_color=1d2b3a&icon_color=0f7fcb&ring_color=0f7fcb" alt="Estatísticas do GitHub" width="49%" align="top" />
+<img src="https://github-readme-stats.vercel.app/api?username=eoleozk245&show_icons=true&locale=pt-br&include_all_commits=true&hide=contribs&line_height=24&border_radius=12&bg_color=135,cdeeff,eaf7ff&border_color=9fd4f5&title_color=0c0c0c&text_color=1d2b3a&icon_color=0f7fcb&ring_color=0f7fcb" alt="Estatísticas do GitHub" width="49%" align="top" />
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=eoleozk245&layout=compact&langs_count=6&card_width=467&locale=pt-br&border_radius=12&bg_color=135,cdeeff,eaf7ff&border_color=9fd4f5&title_color=0c0c0c&text_color=1d2b3a" alt="Linguagens mais usadas" width="49%" align="top" />
 </p>
 
