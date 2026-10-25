@@ -15,11 +15,11 @@ INK, ACC, ACC2 = "#0c0c0c", "#55c7ff", "#2ea8f0"
 
 # (slug, [(texto, itálico?)...], número)
 SECTIONS = [
-    ("sobre", [("About ", False), ("me", True)], "01"),
-    ("stack", [("Tech ", False), ("stack", True)], "02"),
-    ("projetos", [("Featured ", False), ("projects", True)], "03"),
-    ("dashboard", [("GitHub ", False), ("dashboard", True)], "04"),
-    ("contatos", [("Get in ", False), ("touch", True)], "05"),
+    ("sobre", [("Sobre ", False), ("mim", True)], "01"),
+    ("stack", [("Minhas ", False), ("tecnologias", True)], "02"),
+    ("projetos", [("Projetos em ", False), ("destaque", True)], "03"),
+    ("dashboard", [("Dashboard do ", False), ("GitHub", True)], "04"),
+    ("contatos", [("Fale ", False), ("comigo", True)], "05"),
 ]
 
 
@@ -72,27 +72,27 @@ def arrow(cx, cy, r):
             f'stroke="{INK}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>')
 
 
-def section(parts, num, H=92, W=1000):
-    serif = "".join(t for t, _ in parts); fs = 48
+def section(parts, num, H=60, W=1000):
+    serif = "".join(t for t, _ in parts); fs = 31
     fonts = fonts_css(serif, num)
     cy = H / 2
     tspans = "".join(f'<tspan font-style="{"italic" if it else "normal"}" font-weight="{700 if it else 800}">{t}</tspan>' for t, it in parts)
-    pw = 74
-    body = (f'<rect x="26" y="{cy - 19}" width="{pw}" height="38" rx="19" fill="{INK}"/>'
-            f'<circle cx="46" cy="{cy}" r="4.5" fill="{ACC}"/>'
-            f'<text x="58" y="{cy + 5.5}" font-family="JK" font-weight="700" font-size="15" fill="{ACC}">{num}</text>'
-            f'<text x="{26 + pw + 22}" y="{cy + fs * .33:.1f}" font-family="PF" font-size="{fs}" letter-spacing="-1" fill="{INK}">{tspans}</text>'
-            + arrow(W - 26 - 21, cy, 21))
-    return frame(W, H, 30, body, fonts=fonts, seed=int(num), label=serif)
+    pw = 54
+    body = (f'<rect x="26" y="{cy - 13}" width="{pw}" height="26" rx="13" fill="{INK}"/>'
+            f'<circle cx="40" cy="{cy}" r="3.2" fill="{ACC}"/>'
+            f'<text x="49" y="{cy + 4}" font-family="JK" font-weight="700" font-size="11" fill="{ACC}">{num}</text>'
+            f'<text x="{26 + pw + 16}" y="{cy + fs * .33:.1f}" font-family="PF" font-size="{fs}" letter-spacing="-.6" fill="{INK}">{tspans}</text>'
+            + arrow(W - 26 - 15, cy, 15))
+    return frame(W, H, 22, body, fonts=fonts, seed=int(num), label=serif)
 
 
-def footer(W=1000, H=110):
-    parts = [("Thanks for ", False), ("stopping by", True)]
+def footer(W=1000, H=64):
+    parts = [("Obrigado por ", False), ("passar por aqui", True)]
     serif = "".join(t for t, _ in parts)
     fonts = fonts_css(serif, "")
     tspans = "".join(f'<tspan font-style="{"italic" if it else "normal"}" font-weight="{700 if it else 800}">{t}</tspan>' for t, it in parts)
-    body = (f'<text x="{W / 2}" y="{H / 2 + 11}" text-anchor="middle" font-family="PF" font-size="34" letter-spacing="-.5" fill="{INK}">{tspans}</text>')
-    return frame(W, H, 34, body, fonts=fonts, seed=3, label="Thanks for stopping by")
+    body = (f'<text x="{W / 2}" y="{H / 2 + 8}" text-anchor="middle" font-family="PF" font-size="23" letter-spacing="-.5" fill="{INK}">{tspans}</text>')
+    return frame(W, H, 22, body, fonts=fonts, seed=3, label="Obrigado por passar por aqui")
 
 
 def main():
