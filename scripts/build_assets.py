@@ -336,7 +336,7 @@ def _pills(techs, x, y):
     parts, cx = [], x
     for tech in techs:
         w = len(tech) * 7 + 18
-        parts.append(f'<rect x="{cx}" y="{y}" width="{w}" height="22" rx="11" fill="{HEADER}" stroke="{BORDER}"/>'
+        parts.append(f'<rect x="{cx}" y="{y}" width="{w}" height="22" rx="11" fill="#e6f4ff" stroke="#b9ddf6"/>'
                      f'<text class="m" x="{cx + w / 2:.1f}" y="{y + 15}" font-size="11" fill="{CYAN}" text-anchor="middle">{esc(tech)}</text>')
         cx += w + 8
     return "".join(parts)
@@ -349,7 +349,7 @@ def project_card(p: dict, static=False) -> str:
     o.append(f'<defs><linearGradient id="ac" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{CYAN}"/>'
              f'<stop offset="1" stop-color="{BLUE}"/></linearGradient></defs>')
     pulse = an.tag('<animate attributeName="stroke-opacity" values="0.55;1;0.55" dur="4s" repeatCount="indefinite"/>')
-    o.append(f'<rect x="1" y="1" width="{W - 2}" height="{H - 2}" rx="14" fill="{PANEL}" stroke="{BORDER}" stroke-opacity="0.8">{pulse}</rect>')
+    o.append(f'<rect x="1" y="1" width="{W - 2}" height="{H - 2}" rx="14" fill="#f7fbff" stroke="#b9ddf6" stroke-opacity="0.9">{pulse}</rect>')
     o.append(f'<rect x="24" y="1" width="96" height="3" rx="1.5" fill="url(#ac)"/>')
     o.append(f'<path d="M24 31h8l3 3h11a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H26a2 2 0 0 1-2-2V33a2 2 0 0 1 2-2z" fill="none" '
              f'stroke="{CYAN}" stroke-width="1.6" stroke-linejoin="round"/>')
