@@ -1,7 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1584 396" width="1584" height="396" role="img" aria-label="Web Developer in training - Informatics for Internet student - HTML, CSS, JavaScript, Supabase">
 <defs>
   <linearGradient id="base" x1="0" y1="0" x2="1" y2="0.3"><stop offset="0" stop-color="#b4e1ff"/><stop offset=".5" stop-color="#d4efff"/><stop offset="1" stop-color="#e9f6ff"/></linearGradient>
-  <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="55"/></filter>
+  <filter id="blur" x="-20%" y="-50%" width="140%" height="200%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.0035 0.009" numOctaves="2" seed="7" result="n">
+      <animate attributeName="baseFrequency" dur="30s" repeatCount="indefinite" values="0.0035 0.009;0.0055 0.006;0.0030 0.011;0.0035 0.009" calcMode="spline" keyTimes="0;.33;.66;1" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+    </feTurbulence>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="170" xChannelSelector="R" yChannelSelector="G" result="d"/>
+    <feGaussianBlur in="d" stdDeviation="38"/>
+  </filter>
   <clipPath id="c"><rect width="1584" height="396" rx="36" ry="36"/></clipPath>
 </defs>
 <g clip-path="url(#c)">
