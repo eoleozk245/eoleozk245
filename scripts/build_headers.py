@@ -73,7 +73,7 @@ def arrow(cx, cy, r):
             f'stroke="{INK}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>')
 
 
-def section(parts, num, H=46, W=620):
+def section(parts, num, with_arrow=False, H=46, W=620):
     serif = "".join(t for t, _ in parts); fs = 24
     fonts = fonts_css(serif, num)
     cy = H / 2
@@ -83,7 +83,7 @@ def section(parts, num, H=46, W=620):
             f'<circle cx="33" cy="{cy}" r="2.6" fill="{ACC}"/>'
             f'<text x="41" y="{cy + 3.3}" font-family="JK" font-weight="700" font-size="9" fill="{ACC}">{num}</text>'
             f'<text x="{20 + pw + 12}" y="{cy + fs * .33:.1f}" font-family="PF" font-size="{fs}" letter-spacing="-.6" fill="{INK}">{tspans}</text>'
-            + arrow(W - 20 - 12, cy, 12))
+            + (arrow(W - 20 - 12, cy, 12) if with_arrow else ''))
     return frame(W, H, 16, body, fonts=fonts, seed=int(num), label=serif)
 
 
@@ -157,10 +157,10 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default=str(HERE.parent / "assets"))
     out = Path(ap.parse_args().out)
-    files = {f"section-{slug}.svg" if slug != "contatos" else "contatos.svg": section(parts, num) for slug, parts, num in SECTIONS}
+    files = {f"section-{slug}.svg" if slug != "contatos" else "contatos.svg": section(parts, num, slug == "sobre") for slug, parts, num in SECTIONS}
     # a barra "Sobre mim" fica logo abaixo do banner: ganha um respiro transparente no topo
     sob = files["section-sobre.svg"]
-    files["section-sobre.svg"] = sob.replace('viewBox="0 0 620 46"', 'viewBox="0 -8 620 54"', 1).replace('width="620" height="46"', 'width="620" height="54"', 1)
+    files["section-sobre.svg"] = sob.replace('viewBox="0 0 620 46"', 'viewBox="0 -18 620 64"', 1).replace('width="620" height="46"', 'width="620" height="64"', 1)
     files["footer.svg"] = footer()
     files.update(contact_slices())
     files["stack-panel.svg"] = stack_panel()
