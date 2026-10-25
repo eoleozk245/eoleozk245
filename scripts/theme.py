@@ -1,24 +1,24 @@
-"""Paleta e fontes compartilhadas pelos SVGs do perfil (tema Dark Tech).
+"""Paleta e fontes compartilhadas pelos SVGs do perfil (tema azul claro, igual ao banner).
 
 Mexer aqui muda a cara de TODOS os SVGs gerados pelos scripts desta pasta.
 """
 from xml.sax.saxutils import escape
 
 # --- cores -----------------------------------------------------------------
-BG0 = "#05070d"      # fundo mais escuro
-BG1 = "#0a1020"      # fundo azul-marinho
-PANEL = "#0b1220"    # painéis / cards
-PANEL_2 = "#070b14"  # janelas internas
-HEADER = "#0d1627"   # barra de título das janelas
-BORDER = "#12304f"   # bordas discretas
-GRID = "#0f2038"     # linhas da grade
-CYAN = "#00e5ff"     # cor principal
-BLUE = "#2f81f7"     # cor secundária
-ELECTRIC = "#1f6feb"
-TEXT = "#e6edf3"
-SOFT = "#c9d1d9"
-MUTED = "#8b949e"
-DIM = "#4b5a70"
+BG0 = "#eaf6ff"      # fundo mais claro
+BG1 = "#f2f9ff"      # fundo azul bem clarinho
+PANEL = "#e4f3ff"    # painéis / cards
+PANEL_2 = "#f2f9ff"  # janelas internas
+HEADER = "#cdeaff"   # pílulas e barras
+BORDER = "#9fd4f5"   # bordas discretas
+GRID = "#c3e3f8"     # linhas da grade
+CYAN = "#0f7fcb"     # cor principal (azul legível sobre fundo claro)
+BLUE = "#55c7ff"     # cor secundária (azul claro do banner)
+ELECTRIC = "#2ea8f0"
+TEXT = "#0c0c0c"
+SOFT = "#1d2b3a"
+MUTED = "#4a6076"
+DIM = "#6b8199"
 
 # --- fontes (o SVG usa as fontes instaladas no aparelho de quem vê) ---------
 MONO = ("'JetBrains Mono','Fira Code','SFMono-Regular',Consolas,"

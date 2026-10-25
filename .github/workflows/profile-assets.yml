@@ -39,9 +39,9 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/snake-dark.svg?color_snake=#00e5ff&color_dots=#0d1b2a,#0e4429,#006d32,#26a641,#39d353
+            dist/snake-dark.svg?color_snake=#0f7fcb&color_dots=#d6ebfa,#b3e0ff,#7fd0ff,#2ea8f0,#0f7fcb
 
-      - name: Aplicar fundo escuro na cobrinha
+      - name: Aplicar fundo azul claro na cobrinha
         run: python3 scripts/generate_dashboard.py snake dist/snake-dark.svg
 
       - name: Gerar visão geral e gráfico de atividade

@@ -16,10 +16,10 @@ I learn by doing, with continuous study and real projects, to strengthen my prog
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/focus-web%20development-12304f?style=for-the-badge&labelColor=0b1220&color=12304f" alt="Focus: web development" />
-<img src="https://img.shields.io/badge/studying-cybersecurity-12304f?style=for-the-badge&labelColor=0b1220&color=12304f" alt="Studying: cybersecurity" />
-<img src="https://img.shields.io/badge/studying-digital%20art%2C%20Excel%20%26%20Word-12304f?style=for-the-badge&labelColor=0b1220&color=12304f" alt="Studying: digital art, Excel and Word" />
-<img src="https://img.shields.io/badge/interest-artificial%20intelligence-12304f?style=for-the-badge&labelColor=0b1220&color=12304f" alt="Interest: artificial intelligence" />
+<img src="https://img.shields.io/badge/focus-web%20development-12304f?style=for-the-badge&labelColor=0c0c0c&color=1b8fd9" alt="Focus: web development" />
+<img src="https://img.shields.io/badge/studying-cybersecurity-12304f?style=for-the-badge&labelColor=0c0c0c&color=1b8fd9" alt="Studying: cybersecurity" />
+<img src="https://img.shields.io/badge/studying-digital%20art%2C%20Excel%20%26%20Word-12304f?style=for-the-badge&labelColor=0c0c0c&color=1b8fd9" alt="Studying: digital art, Excel and Word" />
+<img src="https://img.shields.io/badge/interest-artificial%20intelligence-12304f?style=for-the-badge&labelColor=0c0c0c&color=1b8fd9" alt="Interest: artificial intelligence" />
 
 </div>
 
@@ -34,21 +34,21 @@ I learn by doing, with continuous study and real projects, to strengthen my prog
 </p>
 
 <p align="center">
-<a href="https://www.instagram.com/eoleozk"><img src="https://skills.syvixor.com/api/icons?i=instagram&theme=dark" alt="Instagram @eoleozk" /></a>&nbsp;&nbsp;
-<a href="https://wa.link/qjufj8"><img src="https://skills.syvixor.com/api/icons?i=whatsapp&theme=dark" alt="Conversar pelo WhatsApp" /></a>&nbsp;&nbsp;
-<a href="mailto:leonardopessoaletec@gmail.com"><img src="https://skills.syvixor.com/api/icons?i=gmail&theme=dark" alt="Enviar e-mail para leonardopessoaletec@gmail.com" /></a>
+<a href="https://www.instagram.com/eoleozk"><img src="https://skills.syvixor.com/api/icons?i=instagram&theme=light" alt="Instagram @eoleozk" /></a>&nbsp;&nbsp;
+<a href="https://wa.link/qjufj8"><img src="https://skills.syvixor.com/api/icons?i=whatsapp&theme=light" alt="Conversar pelo WhatsApp" /></a>&nbsp;&nbsp;
+<a href="mailto:leonardopessoaletec@gmail.com"><img src="https://skills.syvixor.com/api/icons?i=gmail&theme=light" alt="Enviar e-mail para leonardopessoaletec@gmail.com" /></a>
 </p>
 
 <h3 align="center">Linguagens</h3>
 
 <p align="center">
-<img src="https://skillicons.dev/icons?i=html,css,js&theme=dark" alt="HTML, CSS e JavaScript" />
+<img src="https://skillicons.dev/icons?i=html,css,js&theme=light" alt="HTML, CSS e JavaScript" />
 </p>
 
 <h3 align="center">Ferramentas</h3>
 
 <p align="center">
-<img src="https://skillicons.dev/icons?i=supabase,vscode,git,github&theme=dark" alt="Supabase, Visual Studio Code, Git e GitHub" />
+<img src="https://skillicons.dev/icons?i=supabase,vscode,git,github&theme=light" alt="Supabase, Visual Studio Code, Git e GitHub" />
 </p>
 
 <br />
@@ -79,12 +79,12 @@ I learn by doing, with continuous study and real projects, to strengthen my prog
 </p>
 
 <p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=eoleozk245&show_icons=true&locale=pt-br&include_all_commits=true&border_radius=12&bg_color=0b1220&border_color=12304f&title_color=00e5ff&text_color=c9d1d9&icon_color=2f81f7&ring_color=00e5ff" alt="Estatísticas do GitHub" width="49%" align="top" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=eoleozk245&layout=compact&langs_count=6&card_width=467&locale=pt-br&border_radius=12&bg_color=0b1220&border_color=12304f&title_color=00e5ff&text_color=c9d1d9" alt="Linguagens mais usadas" width="49%" align="top" />
+<img src="https://github-readme-stats.vercel.app/api?username=eoleozk245&show_icons=true&locale=pt-br&include_all_commits=true&border_radius=12&bg_color=135,cdeeff,eaf7ff&border_color=9fd4f5&title_color=0c0c0c&text_color=1d2b3a&icon_color=0f7fcb&ring_color=0f7fcb" alt="Estatísticas do GitHub" width="49%" align="top" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=eoleozk245&layout=compact&langs_count=6&card_width=467&locale=pt-br&border_radius=12&bg_color=135,cdeeff,eaf7ff&border_color=9fd4f5&title_color=0c0c0c&text_color=1d2b3a" alt="Linguagens mais usadas" width="49%" align="top" />
 </p>
 
 <p align="center">
-<img src="https://streak-stats.demolab.com?user=eoleozk245&locale=pt_BR&border_radius=12&background=0b1220&border=12304f&stroke=12304f&ring=00e5ff&fire=2f81f7&currStreakNum=e6edf3&sideNums=e6edf3&currStreakLabel=00e5ff&sideLabels=c9d1d9&dates=8b949e" alt="Sequência de contribuições" width="49%" />
+<img src="https://streak-stats.demolab.com?user=eoleozk245&locale=pt_BR&border_radius=12&background=135,cdeeff,eaf7ff&border=9fd4f5&stroke=9fd4f5&ring=0f7fcb&fire=2ea8f0&currStreakNum=0c0c0c&sideNums=0c0c0c&currStreakLabel=0f7fcb&sideLabels=1d2b3a&dates=4a6076" alt="Sequência de contribuições" width="49%" />
 </p>
 
 <p align="center">
