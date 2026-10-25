@@ -108,7 +108,8 @@ def icon_img(name, x, y, size=48):
 
 
 def panel_bg(H):
-    return (f'<rect x="1" y="1" width="{PW - 2}" height="{H - 2}" rx="16" fill="{PANEL_FILL}" stroke="{PANEL_STROKE}" stroke-width="1.5"/>')
+    return (f'<defs><linearGradient id="pg" x1="0" y1="0" x2="1" y2="0.6"><stop offset="0" stop-color="#b9e0ff"/><stop offset=".5" stop-color="#d2ecff"/><stop offset="1" stop-color="#bfe3ff"/></linearGradient></defs>'
+            f'<rect x="1" y="1" width="{PW - 2}" height="{H - 2}" rx="14" fill="url(#pg)" stroke="#8fcbf3" stroke-width="1.5"/>')
 
 
 def pill(cx, y, text):
@@ -124,31 +125,31 @@ def svg_wrap(vb_x, vb_w, H, inner, fonts, label):
 
 
 def contact_slices():
-    H = 112
+    H = 88
     items = [("instagram", "Instagram"), ("whatsapp", "WhatsApp"), ("gmail", "E-mail")]
     edges = [0, 207, 413, PW]
     fonts = fonts_css("", "".join(l for _, l in items))
     out = {}
     for i, (ic, label) in enumerate(items):
         cx = PW / 6 + i * PW / 3
-        inner = (panel_bg(H) + icon_img(ic, round(cx - 28), 18, 56)
-                 + f'<text x="{cx:.1f}" y="{H - 16}" text-anchor="middle" font-family="JK" font-weight="700" font-size="13" fill="{INK}">{label}</text>')
+        inner = (panel_bg(H) + icon_img(ic, round(cx - 20), 12, 40)
+                 + f'<text x="{cx:.1f}" y="{H - 13}" text-anchor="middle" font-family="JK" font-weight="700" font-size="12" fill="{INK}">{label}</text>')
         out[f"contato-{ic}.svg"] = svg_wrap(edges[i], edges[i + 1] - edges[i], H, inner, fonts, label)
     return out
 
 
 def stack_panel():
-    H = 248
+    H = 188
     rows = [("Linguagens", ["html", "css", "js"]), ("Ferramentas", ["supabase", "vscode", "git", "github"])]
     fonts = fonts_css("", "LinguagensFerramentas")
-    inner, y = panel_bg(H), 20
+    inner, y = panel_bg(H), 14
     for title, icons in rows:
         inner += pill(PW / 2, y, title)
-        n, size, gap = len(icons), 56, 18
+        n, size, gap = len(icons), 40, 16
         x0 = (PW - (n * size + (n - 1) * gap)) / 2
         for k, ic in enumerate(icons):
-            inner += icon_img(ic, round(x0 + k * (size + gap)), y + 40, size)
-        y += 114
+            inner += icon_img(ic, round(x0 + k * (size + gap)), y + 34, size)
+        y += 86
     return svg_wrap(0, PW, H, inner, fonts, "Linguagens: HTML, CSS, JavaScript. Ferramentas: Supabase, VS Code, Git, GitHub")
 
 
