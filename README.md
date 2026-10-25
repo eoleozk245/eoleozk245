@@ -27,14 +27,14 @@ I learn by doing, with continuous study and real projects, to strengthen my prog
 
 <p align="center">
 <img src="assets/contatos.svg" alt="Fale comigo" width="520" /><br />
-<a href="https://www.instagram.com/eoleozk"><img src="assets/contato-instagram.svg" alt="Instagram @eoleozk" width="174" /></a><a href="https://wa.link/qjufj8"><img src="assets/contato-whatsapp.svg" alt="Conversar pelo WhatsApp" width="173" /></a><a href="mailto:leonardopessoaletec@gmail.com"><img src="assets/contato-gmail.svg" alt="Enviar e-mail para leonardopessoaletec@gmail.com" width="173" /></a>
+<a href="https://www.instagram.com/eoleozk"><img src="assets/contato-instagram.svg" alt="Instagram @eoleozk" width="147" /></a><a href="https://wa.link/qjufj8"><img src="assets/contato-whatsapp.svg" alt="Conversar pelo WhatsApp" width="147" /></a><a href="mailto:leonardopessoaletec@gmail.com"><img src="assets/contato-gmail.svg" alt="Enviar e-mail para leonardopessoaletec@gmail.com" width="146" /></a>
 </p>
 
 <br />
 
 <p align="center">
 <img src="assets/section-stack.svg" alt="Minhas tecnologias" width="520" /><br />
-<img src="assets/stack-panel.svg" alt="Linguagens: HTML, CSS e JavaScript. Ferramentas: Supabase, Visual Studio Code, Git e GitHub" width="520" />
+<img src="assets/stack-panel.svg" alt="Linguagens: HTML, CSS e JavaScript. Ferramentas: Supabase, Visual Studio Code, Git e GitHub" width="440" />
 </p>
 
 <br />

@@ -98,7 +98,7 @@ def footer(W=620, H=46):
 # ---------------------------------------------------------------------------
 # painéis claros que ficam logo abaixo das barras (contatos e tecnologias)
 # ---------------------------------------------------------------------------
-PW = 620
+PW = 520
 PANEL_FILL, PANEL_STROKE = "#f4faff", "#b9ddf6"
 
 
@@ -108,8 +108,8 @@ def icon_img(name, x, y, size=48):
 
 
 def panel_bg(H):
-    return (f'<defs><linearGradient id="pg" x1="0" y1="0" x2="1" y2="0.6"><stop offset="0" stop-color="#b9e0ff"/><stop offset=".5" stop-color="#d2ecff"/><stop offset="1" stop-color="#bfe3ff"/></linearGradient></defs>'
-            f'<rect x="1" y="1" width="{PW - 2}" height="{H - 2}" rx="14" fill="url(#pg)" stroke="#8fcbf3" stroke-width="1.5"/>')
+    return (f'<defs><linearGradient id="pg" x1="0" y1="0" x2="1" y2="0.6"><stop offset="0" stop-color="#8fcfff"/><stop offset=".5" stop-color="#b4e0ff"/><stop offset="1" stop-color="#82c6fa"/></linearGradient></defs>'
+            f'<rect x="1" y="1" width="{PW - 2}" height="{H - 2}" rx="14" fill="url(#pg)" stroke="#4fb0ee" stroke-width="1.5"/>')
 
 
 def pill(cx, y, text):
@@ -127,7 +127,7 @@ def svg_wrap(vb_x, vb_w, H, inner, fonts, label):
 def contact_slices():
     H = 88
     items = [("instagram", "Instagram"), ("whatsapp", "WhatsApp"), ("gmail", "E-mail")]
-    edges = [0, 207, 413, PW]
+    edges = [0, 174, 347, PW]
     fonts = fonts_css("", "".join(l for _, l in items))
     out = {}
     for i, (ic, label) in enumerate(items):
